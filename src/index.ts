@@ -35,3 +35,4 @@ console.log(
   v1[4] + v2[4],
   v1[5] + v2[5]
 );
+//Esta muy bien Emi, pregunta: podrias haber llenado los 2 arreglos con un solo for?
