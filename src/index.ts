@@ -2,28 +2,49 @@
 let v1: number[] = new Array(6);
 let numberv1: number;
 let indicev1: number;
+//declaro el prompt de ingreso de valores
+for (indicev1 = 0; indicev1 < 6; indicev1++) {
+  numberv1 = Number(
+    prompt(
+      "Indique el número que desea incorporar en la posición " + indicev1,
+      ":"
+    )
+  );
+  v1[indicev1] = numberv1;
+  console.log(
+    "usted ingreso el valor " + numberv1,
+    "en la la ubicacion " + indicev1
+  );
+}
+
 //declare the second array
 let v2: number[] = new Array(6);
 let numberv2: number;
 let indicev2: number;
-//declare the third array
-
-//declaro los prompt de ingreso de valores
-for (indicev1 = 0; indicev1 < 6; indicev1++) {
-  numberv1 = Number(
-    prompt(
-      `Indique el número que desea incorporar en la posición ${indicev1}: `
-    )
-  );
-  v1[indicev1] = numberv1;
-}
+//declaro el prompt de ingreso de valores
 for (indicev2 = 0; indicev2 < 6; indicev2++) {
   numberv2 = Number(
     prompt(
-      `Indique el número que desea incorporar en la posición ${indicev2}: `
+      "Indique el número que desea incorporar en la posición " + indicev2,
+      ":"
     )
   );
   v2[indicev2] = numberv2;
+  console.log(
+    "usted ingreso el valor " + numberv2,
+    "en la la ubicacion " + indicev2
+  );
+}
+
+//declare the third array y un for para que recorra las variables
+let vSuma: number[] = new Array(6);
+let indicevSuma: number;
+for (indicevSuma = 0; indicevSuma < 6; indicevSuma++) {
+  vSuma[indicevSuma] = v1[indicev1] + v2[indicev2];
+}
+let i: number = 0;
+for (i = 0; i < 6; i++) {
+  console.log("el resultado de " + vSuma[indicevSuma]);
 }
 
 console.log(
