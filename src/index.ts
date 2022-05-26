@@ -39,14 +39,16 @@ for (indicev2 = 0; indicev2 < 6; indicev2++) {
 //declare the third array y un for para que recorra las variables
 let vSuma: number[] = new Array(6);
 let indicevSuma: number;
-for (indicevSuma = 0; indicevSuma < 6; indicevSuma++) {
-  vSuma[indicevSuma] = v1[indicev1] + v2[indicev2];
-}
+for (indicevSuma = 0; indicevSuma < 6; indicevSuma++) { //Ojo acá, no se si es un error de concepto o distraccion
+  vSuma[indicevSuma] = v1[indicev1] + v2[indicev2];     //indicevSuma es el unico iterador que deberias usar, los demas no corresponden. 
+}                                                       //  vSuma[indicevSuma] = v1[indicevSuma] + v2[indicevSuma]; Por esa razon no te funciona la suma            
+
 let i: number = 0;
 for (i = 0; i < 6; i++) {
   console.log("el resultado de " + vSuma[indicevSuma]);
 }
-
+//conociendo el error de la linea 42 esto ya no hace falta
+//por lo demas tu solucion esta bien
 console.log(
   "la suma de los numeros igresados es :",
   v1[0] + v2[0],
